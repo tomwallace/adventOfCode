@@ -33,3 +33,5 @@
 /target
 
 *.iml
+/.idea
+
