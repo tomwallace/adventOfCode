@@ -50,17 +50,16 @@ You will not encounter any strings containing numbers.
                     result += it
                 }
                 if (it instanceof Map || it instanceof List) {
-
-                    // TODO: getting stack overflow errors here.  Need to fix
-                    result += totalJsonComponent(it)
+                    Integer recursiveResult = totalJsonComponent(it)
+                    result += recursiveResult
                 }
             }
         } else {
             // Must be a map and no value contains red
-            println(jsonParsed)
             jsonParsed.each {
                 if (!mapWithRed &&( it.value instanceof Map || it.value instanceof List)) {
-                    result += totalJsonComponent(it)
+                    Integer recursiveResult = totalJsonComponent(it.value)
+                    result += recursiveResult
                 }
                 if (it.value == "red") {
                     result = 0
@@ -73,50 +72,5 @@ You will not encounter any strings containing numbers.
         }
 
         return result
-    }
-
-
-
-    protected String revPassword(String input) {
-        String newEnd = ''
-        def i = 0
-        Integer length = input.size() - 1
-        // Use recursion to trim off the string a little at a time
-        for (i = 0; i <= length; i++) {
-            String lastChar = input.substring(input.length() - 1, input.length())
-            input = input.substring(0, input.length() - 1)
-            String revedChar = revChar(lastChar)
-            newEnd = "$revedChar$newEnd"
-            if (revedChar != 'a') {
-                break
-            }
-        }
-        return input + newEnd
-    }
-
-    private String revChar(String c) {
-        int ascii = (int) c
-        ++ascii
-        // If greater than 122 ('z') revert to 97 ('a')
-        if (ascii > 122) {
-            ascii = 97
-        }
-        return Character.toString ((char) ascii)
-    }
-
-    protected boolean isValidPassword(String input) {
-        return containsLetterStraight(input) && !hasBlacklistedCharacter(input) && containsDuplicatePairs(input)
-    }
-
-    protected boolean containsLetterStraight(String input) {
-        return input.find(/(?:abc|bcd|cde|def|efg|fgh|pqr|qrs|rst|stu|tuv|uvw|vwx|wxy|xyz)/) != null
-    }
-
-    protected boolean hasBlacklistedCharacter(String input) {
-        return input.find(/[iol]/) != null
-    }
-
-    protected boolean containsDuplicatePairs(String input) {
-        return input.findAll(/(\w)\1+/).size() > 1
     }
 }

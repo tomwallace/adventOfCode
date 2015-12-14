@@ -14,6 +14,29 @@ class DayNineServiceSpecification extends Specification {
         then:
         result
         result.size() == 8
+
+        when:
+        def perms = []
+        result.eachPermutation {
+            perms << it
+        }
+
+        then:
+        perms
+    }
+
+    def "test calculateAllDistances"() {
+        when:
+        def result = service.getUniqueCities(service.PUZZLE_INPUT)
+        def perms = []
+        result.eachPermutation {
+            perms << it
+        }
+
+        def dists = service.calculateAllDistances(service.PUZZLE_INPUT)
+
+        then:
+        dists.size() == perms.size()
     }
 
     def "test createMapOfDistances"() {
@@ -35,22 +58,23 @@ class DayNineServiceSpecification extends Specification {
 
     def "test with actual part a"() {
         when:
-        def result = service.calculateDistanceShortestRoute(service.PUZZLE_INPUT)
+        def result = service.calculateAllDistances(service.PUZZLE_INPUT)
+        def shortest = result.sort()[0]
 
         then:
-        result
-        result == 207
+        shortest
+        shortest == 207
     }
 
 
     def "test with actual part b"() {
         when:
-        def result = service.calculateDistanceLongestRoute(service.PUZZLE_INPUT)
+        def result = service.calculateAllDistances(service.PUZZLE_INPUT)
+        def longest = result.sort { -it }[0]
 
         then:
-        result
-        // TODO: Too low
-        result == 764
+        longest
+        longest == 804
     }
 
 }

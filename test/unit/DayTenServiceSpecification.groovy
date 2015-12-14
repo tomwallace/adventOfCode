@@ -26,6 +26,8 @@ class DayTenServiceSpecification extends Specification {
         '312211'    | '111221'
     }
 
+    // Takes long time to run, so commenting out for test-app
+    /*
     def "test with actual part a"() {
         when:
         println("Start: ${new Date().toString()}")
@@ -36,6 +38,7 @@ class DayTenServiceSpecification extends Specification {
         result
         result == 329356
     }
+    */
 
     // Took HOURs to run.  So commenting out in case accidentaly run via test-app
     /*

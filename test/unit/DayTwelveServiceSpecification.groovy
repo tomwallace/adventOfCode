@@ -38,7 +38,7 @@ class DayTwelveServiceSpecification extends Specification {
 
         where:
         expected | input
-//        6   | '[1,2,3]'
+        6   | '[1,2,3]'
         4   | '[1,{"c":"red","b":2},3]'
         0   | '{"d":"red","e":[1,2,3,4],"f":5}'
         6   | '[1,"red",5]'
@@ -62,7 +62,7 @@ class DayTwelveServiceSpecification extends Specification {
 
         then:
         result
-        result == 500
+        result == 65402
     }
 
 

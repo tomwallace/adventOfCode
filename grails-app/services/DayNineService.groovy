@@ -35,8 +35,6 @@ Snowdin to Tambi = 15
 Snowdin to Straylight = 99
 Tambi to Straylight = 70"""
 
-    // TODO: Come back and try - a bit stumped
-
     /*
 Every year, Santa manages to deliver all of his presents in a single night.
 
@@ -61,91 +59,31 @@ What is the distance of the shortest route?
      */
     // 8 locations in the input
 
-    Integer calculateDistanceShortestRoute(String input) {
+    List<Integer> calculateAllDistances(String input) {
         List<String> cities = getUniqueCities(input)
-        Map startingCityDistances = [:]
-
-        // Create our map of distances
         Map distances = createMapOfDistances(input, cities)
 
-        // Loop through each of the cities as a starting city
-        cities.each { startingCity ->
-            Integer totalDistance = 0
-            List<String> citiesAlreadyVisited = []
-            String city = startingCity
-
-            def i = 0
-            // Recurse through the list
-            for (i = 0; i <= distances.size() - 1; i++) {
-                // If we don't have a distance below, then we have to break out as that starting city was invalid
-                List<Integer> dists = distances."${city}"?.values()?.toList()?.collect()
-                // Drop all values for cities already visited, as we don't revisit
-                citiesAlreadyVisited.each {
-                    Integer distToRemove = distances."${city}"."${it}"?.value
-                    dists.remove(dists.indexOf(distToRemove))
-                }
-                // Break on last point of route
-                if (dists.size() == 0) {
-                    break
-                }
-                Integer leastDistance = dists.sort()[0]
-                String linkingCity = distances."${city}".find { it.value == leastDistance}.key
-
-                totalDistance += leastDistance
-                citiesAlreadyVisited << city
-                city = linkingCity
-            }
-
-            // Create map entry for that starting city's distance
-            startingCityDistances["${startingCity}"] = totalDistance
+        List<List> allPerms = []
+        cities.eachPermutation {
+            allPerms << it
         }
 
-        // Return the smallest value
-        return startingCityDistances.values().sort()[0]
-    }
-
-    Integer calculateDistanceLongestRoute(String input) {
-        List<String> cities = getUniqueCities(input)
-        Map startingCityDistances = [:]
-
-        // Create our map of distances
-        Map distances = createMapOfDistances(input, cities)
-
-        // Loop through each of the cities as a starting city
-        cities.each { startingCity ->
-            Integer totalDistance = 0
-            List<String> citiesAlreadyVisited = []
-            String city = startingCity
-
-            def i = 0
-            // Recurse through the list
-            for (i = 0; i <= distances.size() - 1; i++) {
-                List<Integer> dists = distances."${city}"?.values()?.toList()?.collect()
-                // Drop all values for cities already visited, as we don't revisit
-                citiesAlreadyVisited.each {
-                    Integer distToRemove = distances."${city}"."${it}"?.value
-                    dists.remove(dists.indexOf(distToRemove))
+        List<Integer> routeDists = []
+        allPerms.each { route ->
+            Integer total = 0
+            String prevCity = null
+            route.each { city ->
+                if (prevCity) {
+                    Integer dist = distances."${prevCity}"."${city}"
+                    total += dist
                 }
-                // Break on last point of route
-                if (dists.size() == 0) {
-                    break
-                }
-                Integer mostDistance = dists.sort{ -it }[0]
-                String linkingCity = distances."${city}".find { it.value ==  mostDistance}.key
-
-                totalDistance +=  mostDistance
-                citiesAlreadyVisited << city
-                city = linkingCity
+                prevCity = city
             }
-
-            // Create map entry for that starting city's distance
-            startingCityDistances["${startingCity}"] = totalDistance
+            routeDists << total
         }
 
-        // Return the smallest value
-        return startingCityDistances.values().sort{ -it }[0]
+        return routeDists
     }
-
 
     protected List<String> getUniqueCities(String input) {
         List<String> cities = input.findAll(/(?m)^(\w*)\b/).unique()
