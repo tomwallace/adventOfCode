@@ -98,6 +98,9 @@ class Entity {
     Integer hitPoints
     Integer armor
     Integer damage
+    Integer mana
+    Integer manaSpentDuringFight = 0
+    boolean isMe
 
     boolean canBeatEntity(Entity other, boolean iGoFirst) {
         Integer myHitpoints = hitPoints
