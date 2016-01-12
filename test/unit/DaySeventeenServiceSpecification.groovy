@@ -7,21 +7,21 @@ import spock.lang.Specification
 @TestFor(DaySeventeenService)
 class DaySeventeenServiceSpecification extends Specification {
 
-    def "test findCombinationOfContainers"() {
+    def "test fetchCombinationsOfContainers"() {
         when:
         def input = """2\n
 2\n
 4\n
 4\n
 """
-        def result = service.findCombinationOfContainers(input, 8)
+        def result = service.fetchCombinationsOfContainers(8, input)
 
         then:
         result
-        result == 3
+        result.size() == 3
     }
 
-    def "test findCombinationOfContainers Two"() {
+    def "test fetchCombinationsOfContainers Two"() {
         when:
         def input = """20\n
 15\n
@@ -29,34 +29,31 @@ class DaySeventeenServiceSpecification extends Specification {
 5\n
 5\n
 """
-        def result = service.findCombinationOfContainers(input, 25)
+        def result = service.fetchCombinationsOfContainers(25, input)
 
         then:
         result
-        result == 4
+        result.size() == 4
     }
-
-    // 20, 15, 10, 5, and 5
 
     def "test with actual part a"() {
         when:
-        def result = service.findCombinationOfContainers(service.PUZZLE_INPUT, 150)
+        def result = service.fetchCombinationsOfContainers(150, service.PUZZLE_INPUT)
 
         then:
 
-        // 30183 is too high
-        // 119 is too low
         result
-        result == 40
+        result.size() == 4372
     }
-/*
+
     def "test with actual part b"() {
         when:
-        def result = service.findAuntNumberPartTwo(service.PUZZLE_INPUT)
+        def result = service.fetchCombinationsOfContainers(150, service.PUZZLE_INPUT)
+        def smallestSize = result.sort { it.size() }[0].size()
+        def count = result.findAll { it.size() == smallestSize }.size()
 
         then:
-        result
-        result == 241
+        count == 4
     }
-*/
+
 }

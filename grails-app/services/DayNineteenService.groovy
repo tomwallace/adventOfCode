@@ -120,14 +120,14 @@ Your puzzle input describes all of the possible replacements and, at the bottom,
         return STEPS_MAKE_MOLECULE.sort()[0]
     }
 
-    protected void makeMoleculeRecursive(String desiredMolecule, String current, List<List> rules, Integer counter) {
+    protected Integer makeMoleculeRecursive(String desiredMolecule, String current, List<List> rules, Integer counter) {
         if (current.size() > desiredMolecule.size()) {
-            return
+            return 0
         }
         if (current == desiredMolecule) {
             println("Found one >> ${current}")
             STEPS_MAKE_MOLECULE << counter
-            return
+            return 1
         }
         rules.each { d ->
             List<Integer> indexsOfMatch = []
@@ -136,13 +136,15 @@ Your puzzle input describes all of the possible replacements and, at the bottom,
                 indexsOfMatch << index
                 index = current.indexOf(d[0], index + 1)
             }
+            String molecule = current
             indexsOfMatch.each { idx ->
                 String newChar = d[1]
                 String firstPart = current.substring(0, idx)
                 String lastPart = current.substring(idx + d[0].size(), current.length())
-                String molecule = "${firstPart}${newChar}${lastPart}"
-                makeMoleculeRecursive(desiredMolecule, molecule, rules, counter + 1)
+                molecule = "${firstPart}${newChar}${lastPart}"
+                ++counter
             }
+            makeMoleculeRecursive(desiredMolecule, molecule, rules, counter)
         }
     }
 
