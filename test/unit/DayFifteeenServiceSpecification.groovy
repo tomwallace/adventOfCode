@@ -7,63 +7,34 @@ import spock.lang.Specification
 @TestFor(DayFifteenService)
 class DayFifteeenServiceSpecification extends Specification {
 
-    def "test createMapOfData"() {
+    def "test determineCookieScore"() {
         when:
-        def result = service.createMapOfData(service.PUZZLE_INPUT)
+        def ingredients = [
+                new Ingredient(name: 'Butterscotch', capacity: -1, durability: -2, flavor: 6, calories: 8, texture: 3,  amount: 44),
+                new Ingredient(name: 'Cinnamon', capacity: 2, durability: 3, flavor: -2, calories: 3, texture: -1,  amount: 56)
+        ]
+
+        def result = service.determineCookieScore(ingredients)
 
         then:
-        result
-        result.each {
-            assert it.key
-            assert it.value.capacity instanceof Integer
-            assert it.value.durability instanceof Integer
-            assert it.value.flavor instanceof Integer
-            assert it.value.texture instanceof Integer
-            assert it.value.calories instanceof Integer
-        }
-    }
-
-    def "test determineCombinationsAddUpToValue"() {
-        when:
-        def total = 100
-        List<Integer> countInputs = [1,1,1,1]
-        println("Start: ${new Date().toString()}")
-        def result = service.determineCombinationsAddUpToValue(countInputs, total)
-        println("End: ${new Date().toString()}")
-
-        then:
-        result
-        result.each {
-            assert it.sum() == total
-        }
-    }
-
-    def "test revInputs"() {
-        when:
-        println("Start: ${new Date().toString()}")
-        def result = service.revInputs([1,1,1,1], 100)
-        println("End: ${new Date().toString()}")
-
-        then:
-        result
+        result == 62842880
     }
 
     def "test with actual part a"() {
         when:
-        Map speedData = service.createMapOfSpeeds(service.PUZZLE_INPUT)
-        def result = service.furthestDeerDistance(speedData, service.PUZZLE_TIME)
+        def result = service.collectCookieScoresForIngredient(null)
 
         then:
         result
-        result.sort { -it }[0] == 2655
+        result == 222870
     }
 
     def "test with actual part b"() {
         when:
-        def result = service.mostPoints(service.PUZZLE_INPUT, service.PUZZLE_TIME)
+        def result = service.collectCookieScoresForIngredient(500)
 
         then:
         result
-        result == 1059
+        result == 117936
     }
 }

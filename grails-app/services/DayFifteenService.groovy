@@ -3,12 +3,13 @@
  */
 class DayFifteenService {
 
-    final static Integer PUZZLE_TIME = 2503
-    final static String PUZZLE_INPUT = """Sugar: capacity 3, durability 0, flavor 0, texture -3, calories 2
-Sprinkles: capacity -3, durability 3, flavor 0, texture 0, calories 9
-Candy: capacity -1, durability 0, flavor 4, texture 0, calories 1
-Chocolate: capacity 0, durability 0, flavor -2, texture 2, calories 8
-"""
+
+    List<Ingredient> INGREDIENTS = [
+            new Ingredient(name: 'Sugar', capacity: 3, durability: 0, flavor: 0, texture: -3, calories: 2),
+            new Ingredient(name: 'Sprinkles', capacity: -3, durability: 3, flavor: 0, texture: 0, calories: 9),
+            new Ingredient(name: 'Candy', capacity: -1, durability: 0, flavor: 4, texture: 0, calories: 1),
+            new Ingredient(name: 'Chocolate', capacity: 0, durability: 0, flavor: -2, texture: 2, calories: 8)
+    ]
 
     // http://adventofcode.com/day/15
 
@@ -40,115 +41,65 @@ Given the ingredients in your kitchen and their properties, what is the total sc
 
      */
 
-    // TODO: Takes too long to create all combinations.  Must  come back and review later
-    // TODO: Process exceeds GC mem limit.  Must do a different way
-   // TODO: Clean up!
-    protected Map createMapOfData(String input) {
-        // Create our map of ingredient data
-        Map data = [:]
-        input.tokenize("\n").each { String line ->
-            String ingredient = line.find(/^(\w*)\b/)
-            List<Integer> nums = line.findAll(/(\d+)/)
-            Map ingredientData = [capacity: nums[0].toInteger(), durability: nums[1].toInteger(), flavor: nums[2].toInteger(), texture: nums[3].toInteger(), calories: nums[4].toInteger()]
-            data["${ingredient}"] = ingredientData
-        }
+    protected BigInteger determineCookieScore(List<Ingredient> ingredients) {
+        Integer capacity = ingredients.collect { it.capacity * it.amount }.sum()
+        Integer durability = ingredients.collect { it.durability * it.amount }.sum()
+        Integer flavor = ingredients.collect { it.flavor * it.amount }.sum()
+        Integer texture = ingredients.collect { it.texture * it.amount }.sum()
 
-        return data
-    }
-/*
-    protected List<List> determineCombinationsAddUpToValue(Integer countInputs, Integer total) {
-
-
-       ORIGINAL
-        def ccR
-        ccR = { BigInteger tot, List<BigInteger> coins ->
-            BigInteger n = coins.size()
-            switch ([tot:tot, coins:coins]) {
-                case { it.tot == 0 } :
-                    return 1g
-                case { it.tot < 0 || coins == [] } :
-                    return 0g
-                default:
-                    return ccR(tot, coins[1..<n]) +
-                            ccR(tot - coins[0], coins)
-            }
-        }
-
-        def ccR
-        ccR = { Integer tot, List<Integer> tsps ->
-            Integer n = tsps.size()
-            switch ([tot:tot, coins:tsps]) {
-                case { it.tot == tsps.sum() } :
-                    return tsps
-                case { it.tot < 0 || tsps == [] } :
-                    return []
-                default:
-                    return ccR(tot, tsps[1..<n]) +
-                            ccR(tot - tsps[0], tsps)
-            }
-        }
-
-        def ways = ccR(100g, [1g, 1g, 1g, 1g])
-
-        def i = 1
-
-    }
-*/
-
-    static List<List> determineCombinationsAddUpToValue2(List<Integer> numbers, Integer target, List<Integer> partial) {
-        List<List> output = []
-        int s = 0;
-        for (int x: partial) s += x;
-        if (s == target) {
-            System.out.println("sum("+Arrays.toString(partial.toArray())+")="+target);
-            output << partial
-        }
-
-        if (s >= target)
-            return;
-        for(int i=0;i<numbers.size();i++) {
-            ArrayList<Integer> remaining = new ArrayList<Integer>();
-            int n = numbers.get(i);
-            for (int j=i+1; j<numbers.size();j++) remaining.add(numbers.get(j));
-            ArrayList<Integer> partial_rec = new ArrayList<Integer>(partial);
-            partial_rec.add(n);
-            determineCombinationsAddUpToValue2(remaining,target,partial_rec);
-        }
+        BigInteger total = (capacity > 0 ? capacity : 0) * (durability > 0 ? durability : 0) * (flavor > 0 ? flavor : 0) * (texture > 0 ? texture : 0)
+        return total
     }
 
+    protected BigInteger collectCookieScoresForIngredient(Integer calorieRequirement) {
+        Integer su
+        Integer sp
+        Integer ca
+        Integer ch
 
- // http://stackoverflow.com/questions/18051885/find-and-print-each-unique-combination-that-sums-to-100-and-return-a-count-of-al?lq=1
+        def chocolate = INGREDIENTS.find { it.name == 'Chocolate'}
+        def sugar = INGREDIENTS.find { it.name == 'Sugar'}
+        def sprinkles = INGREDIENTS.find { it.name == 'Sprinkles'}
+        def candy = INGREDIENTS.find { it.name == 'Candy'}
 
-    protected List<List> determineCombinationsAddUpToValue(List<Integer> inputs, Integer total) {
-        List<List> results = []
-        List<List> iterations = revInputs(inputs, total)
-        iterations.each { iteration ->
-            if (iteration.sum() == total) {
-                results << iteration
-            }
-        }
-    }
-
-    protected List<List> revInputs(List<Integer> input, Integer total) {
-        def i
-        def y
-        List<List> output = []
-        Integer length = input.size()
-        for (;;) {  // infinite for
-            for (i = length - 1; i >=0; --i) {
-                ++input[i]
-                if (i != 0 && input[i] >= total) {
-                    input[i] = 1
-                } else {
-                    output << input.collect()
-                    break
+        BigInteger highest = 0
+        for (su = 1; su <= 100; ++su) {
+            for (sp = 1; sp <= 100; ++sp) {
+                for (ca = 1; ca <= 100; ++ca) {
+                    for (ch = 1; ch <= 100; ++ch) {
+                        // Only count the totals that add up to 100
+                        // If there is a calorie requirement, enforce it
+                        boolean failsCalorieRequirement = (calorieRequirement && ((chocolate.calories * ch) + (sugar.calories * su) + (sprinkles.calories * sp) + (candy.calories * ca)) != calorieRequirement)
+                        if (su+sp+ca+ch == 100 && !failsCalorieRequirement) {
+                            chocolate.amount = ch
+                            sugar.amount = su
+                            sprinkles.amount = sp
+                            candy.amount = ca
+                            List<Ingredient> list = [
+                                    chocolate, sugar, sprinkles, candy
+                            ]
+                            BigInteger result = determineCookieScore(list)
+                            if (result > highest) {
+                                highest = result
+                            }
+                        }
+                    }
                 }
             }
-            if (input[0] == total) {
-                break
-            }
         }
-
-        return output
+        return highest
     }
+
+}
+
+class Ingredient {
+    String name
+    Integer capacity
+    Integer durability
+    Integer flavor
+    Integer texture
+    Integer calories
+
+    Integer amount
+
 }
