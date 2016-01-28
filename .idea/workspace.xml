@@ -24,53 +24,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="DayFifteenService.groovy" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/services/DayFifteenService.groovy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="2109" max-vertical-offset="3002">
-              <caret line="42" column="20" selection-start-line="42" selection-start-column="20" selection-end-line="42" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DaySeventeenService.groovy" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/grails-app/services/DaySeventeenService.groovy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.4723247" vertical-offset="0" max-vertical-offset="1501">
-              <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DaySeventeenServiceSpecification.groovy" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/unit/DaySeventeenServiceSpecification.groovy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1216">
-              <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DayNineteenService.groovy" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/services/DayNineteenService.groovy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="2223" max-vertical-offset="3135">
-              <caret line="120" column="5" selection-start-line="120" selection-start-column="5" selection-end-line="120" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="DayNineteenServiceSpecification.groovy" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/unit/DayNineteenServiceSpecification.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="950" max-vertical-offset="1501">
-              <caret line="64" column="25" selection-start-line="64" selection-start-column="25" selection-end-line="64" selection-end-column="25" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="522" max-vertical-offset="1178">
+              <caret line="49" column="32" selection-start-line="49" selection-start-column="32" selection-end-line="49" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DayNineteenService.groovy" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/grails-app/services/DayNineteenService.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="3.7231727" vertical-offset="0" max-vertical-offset="3363">
+              <caret line="127" column="12" selection-start-line="127" selection-start-column="12" selection-end-line="127" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -86,8 +54,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/test/unit/DayFiveServiceSpecification.groovy" />
-        <option value="$PROJECT_DIR$/test/unit/DayOneServiceSpecification.groovy" />
         <option value="$PROJECT_DIR$/test/unit/DayTwoServiceSpecification.groovy" />
         <option value="$PROJECT_DIR$/test/unit/DayThreeServiceSpecification.groovy" />
         <option value="$PROJECT_DIR$/test/unit/DayFourServiceSpecification.groovy" />
@@ -114,37 +80,39 @@
         <option value="$PROJECT_DIR$/test/unit/DayFourteenServiceSpecification.groovy" />
         <option value="$PROJECT_DIR$/test/unit/DayThirteenServiceSpecification.groovy" />
         <option value="$PROJECT_DIR$/test/unit/DayTenServiceSpecification.groovy" />
-        <option value="$PROJECT_DIR$/test/unit/DayFifteeenServiceSpecification.groovy" />
         <option value="$PROJECT_DIR$/grails-app/services/DaySixteenService.groovy" />
         <option value="$PROJECT_DIR$/test/unit/DaySixteenServiceSpecification.groovy" />
         <option value="$PROJECT_DIR$/grails-app/services/DaySixteenService.java" />
         <option value="$PROJECT_DIR$/test/unit/DaySevenServiceSpecification.groovy" />
         <option value="$PROJECT_DIR$/grails-app/services/DaySevenService.groovy" />
-        <option value="$PROJECT_DIR$/test/unit/DayNineteenServiceSpecification.groovy" />
         <option value="$PROJECT_DIR$/test/unit/DayEighteenServiceSpecification.groovy" />
         <option value="$PROJECT_DIR$/grails-app/services/DayEighteenService.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/services/DayFifteenService.groovy" />
         <option value="$PROJECT_DIR$/test/unit/DayTwentyOneServiceSpecification.groovy" />
         <option value="$PROJECT_DIR$/grails-app/services/DayTwentyService.groovy" />
         <option value="$PROJECT_DIR$/test/unit/DayTwentyServiceSpecification.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/services/DayTwentyOneService.groovy" />
-        <option value="$PROJECT_DIR$/test/unit/DayTwentyTwoServiceSpecification.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/services/DayTwentyTwoService.groovy" />
         <option value="$PROJECT_DIR$/grails-app/services/DayTwentyThreeService.groovy" />
         <option value="$PROJECT_DIR$/test/unit/DayTwentyThreeServiceSpecification.groovy" />
         <option value="$PROJECT_DIR$/test/unit/DayTwentyFiveServiceSpecification.groovy" />
         <option value="$PROJECT_DIR$/grails-app/services/DayTwentyFiveService.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/services/DayNineteenService.groovy" />
         <option value="$PROJECT_DIR$/test/unit/DaySeventeenServiceSpecification.groovy" />
         <option value="$PROJECT_DIR$/grails-app/services/DaySeventeenService.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/services/DayTwentyFourService.groovy" />
+        <option value="$PROJECT_DIR$/test/unit/DayTwentyFourServiceSpecification.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/services/DayTwentyOneService.groovy" />
+        <option value="$PROJECT_DIR$/test/unit/DayFifteeenServiceSpecification.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/services/DayFifteenService.groovy" />
+        <option value="$PROJECT_DIR$/test/unit/DayTwentyTwoServiceSpecification.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/services/DayTwentyTwoService.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/services/DayNineteenService.groovy" />
+        <option value="$PROJECT_DIR$/test/unit/DayNineteenServiceSpecification.groovy" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="1080" />
-    <option name="y" value="24" />
+    <option name="y" value="-4" />
     <option name="width" value="1920" />
-    <option name="height" value="1056" />
+    <option name="height" value="1084" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -172,6 +140,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -279,7 +248,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -301,11 +269,29 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Grails.DaySeventeenServiceSpecification">
+  <component name="RunManager" selected="Grails.DayNineteenServiceSpecification">
     <configuration default="false" name="test with actual part b()" type="GrailsRunConfigurationType" factoryName="Grails" temporary="true">
       <module name="adventOfCode" />
-      <setting name="vmparams" value="-XX:PermSize=512m -XX:MaxPermSize=512m -Xmx1200M -Xms1200m -Djava.net.preferIPv4Stack=true -Dorg.apache.camel.jmx.disabled=true -Dgrails.full.stacktrace=true" />
+      <setting name="vmparams" value="-XX:PermSize=512m -XX:MaxPermSize=2048m -Xmx4g -Xms1g -Djava.net.preferIPv4Stack=true -Dorg.apache.camel.jmx.disabled=true -Dgrails.full.stacktrace=true -Xss512m" />
       <setting name="cmdLine" value="test-app unit: &quot;DayNineteenServiceSpecification.test with actual part b&quot; -echoOut" />
+      <setting name="depsClasspath" value="false" />
+      <setting name="passParentEnv" value="true" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <setting name="launchBrowser" value="false" />
+      <RunnerSettings RunnerId="GrailsMavenDebuggerRunner">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="GrailsMavenDebuggerRunner" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="test with actual part a()" type="GrailsRunConfigurationType" factoryName="Grails" temporary="true">
+      <module name="adventOfCode" />
+      <setting name="vmparams" value="-XX:PermSize=512m -XX:MaxPermSize=2048m -Xmx4g -Xms1g -Djava.net.preferIPv4Stack=true -Dorg.apache.camel.jmx.disabled=true -Dgrails.full.stacktrace=true -Xss512m" />
+      <setting name="cmdLine" value="test-app unit: &quot;DayTwentyTwoServiceSpecification.test with actual part a&quot; -echoOut" />
       <setting name="depsClasspath" value="false" />
       <setting name="passParentEnv" value="true" />
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
@@ -320,24 +306,32 @@
     </configuration>
     <configuration default="false" name="test with actual part b() (1)" type="GrailsRunConfigurationType" factoryName="Grails" temporary="true">
       <module name="adventOfCode" />
-      <setting name="vmparams" value="-XX:PermSize=512m -XX:MaxPermSize=512m -Xmx1200M -Xms1200m -Djava.net.preferIPv4Stack=true -Dorg.apache.camel.jmx.disabled=true -Dgrails.full.stacktrace=true" />
-      <setting name="cmdLine" value="test-app unit: &quot;DaySeventeenServiceSpecification.test with actual part b&quot; -echoOut" />
+      <setting name="vmparams" value="-XX:PermSize=512m -XX:MaxPermSize=2048m -Xmx4g -Xms1g -Djava.net.preferIPv4Stack=true -Dorg.apache.camel.jmx.disabled=true -Dgrails.full.stacktrace=true -Xss512m" />
+      <setting name="cmdLine" value="test-app unit: &quot;DayTwentyTwoServiceSpecification.test with actual part b&quot; -echoOut" />
       <setting name="depsClasspath" value="false" />
       <setting name="passParentEnv" value="true" />
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <setting name="launchBrowser" value="false" />
-      <RunnerSettings RunnerId="GrailsMavenDebuggerRunner">
-        <option name="DEBUG_PORT" value="" />
-        <option name="TRANSPORT" value="0" />
-        <option name="LOCAL" value="true" />
-      </RunnerSettings>
-      <ConfigurationWrapper RunnerId="GrailsMavenDebuggerRunner" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="DaySeventeenServiceSpecification" type="GrailsRunConfigurationType" factoryName="Grails" temporary="true">
+    <configuration default="false" name="DayTwentyTwoServiceSpecification" type="GrailsRunConfigurationType" factoryName="Grails" temporary="true">
       <module name="adventOfCode" />
-      <setting name="vmparams" value="-XX:PermSize=512m -XX:MaxPermSize=512m -Xmx1200M -Xms1200m -Djava.net.preferIPv4Stack=true -Dorg.apache.camel.jmx.disabled=true -Dgrails.full.stacktrace=true" />
-      <setting name="cmdLine" value="test-app unit: DaySeventeenServiceSpecification -echoOut" />
+      <setting name="vmparams" value="-XX:PermSize=512m -XX:MaxPermSize=2048m -Xmx4g -Xms1g -Djava.net.preferIPv4Stack=true -Dorg.apache.camel.jmx.disabled=true -Dgrails.full.stacktrace=true -Xss512m" />
+      <setting name="cmdLine" value="test-app unit: DayTwentyTwoServiceSpecification -echoOut" />
+      <setting name="depsClasspath" value="false" />
+      <setting name="passParentEnv" value="true" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <setting name="launchBrowser" value="false" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="DayNineteenServiceSpecification" type="GrailsRunConfigurationType" factoryName="Grails" temporary="true">
+      <module name="adventOfCode" />
+      <setting name="vmparams" value="-XX:PermSize=512m -XX:MaxPermSize=2048m -Xmx4g -Xms1g -Djava.net.preferIPv4Stack=true -Dorg.apache.camel.jmx.disabled=true -Dgrails.full.stacktrace=true -Xss512m" />
+      <setting name="cmdLine" value="test-app unit: DayNineteenServiceSpecification -echoOut" />
       <setting name="depsClasspath" value="false" />
       <setting name="passParentEnv" value="true" />
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
@@ -354,7 +348,7 @@
     </configuration>
     <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
       <module name="" />
-      <setting name="vmparams" value="-XX:PermSize=512m -XX:MaxPermSize=512m -Xmx1200M -Xms1200m -Djava.net.preferIPv4Stack=true -Dorg.apache.camel.jmx.disabled=true -Dgrails.full.stacktrace=true" />
+      <setting name="vmparams" value="-XX:PermSize=512m -XX:MaxPermSize=2048m -Xmx4g -Xms1g -Djava.net.preferIPv4Stack=true -Dorg.apache.camel.jmx.disabled=true -Dgrails.full.stacktrace=true -Xss512m" />
       <setting name="cmdLine" value="run-app" />
       <setting name="depsClasspath" value="false" />
       <setting name="passParentEnv" value="true" />
@@ -589,18 +583,22 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <list size="5">
+    <list size="7">
       <item index="0" class="java.lang.String" itemvalue="Grails.run-app" />
       <item index="1" class="java.lang.String" itemvalue="Grails.test-app" />
       <item index="2" class="java.lang.String" itemvalue="Grails.test with actual part b()" />
-      <item index="3" class="java.lang.String" itemvalue="Grails.test with actual part b() (1)" />
-      <item index="4" class="java.lang.String" itemvalue="Grails.DaySeventeenServiceSpecification" />
+      <item index="3" class="java.lang.String" itemvalue="Grails.test with actual part a()" />
+      <item index="4" class="java.lang.String" itemvalue="Grails.test with actual part b() (1)" />
+      <item index="5" class="java.lang.String" itemvalue="Grails.DayTwentyTwoServiceSpecification" />
+      <item index="6" class="java.lang.String" itemvalue="Grails.DayNineteenServiceSpecification" />
     </list>
     <recent_temporary>
-      <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="Grails.DaySeventeenServiceSpecification" />
-        <item index="1" class="java.lang.String" itemvalue="Grails.test with actual part b() (1)" />
-        <item index="2" class="java.lang.String" itemvalue="Grails.test with actual part b()" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Grails.DayNineteenServiceSpecification" />
+        <item index="1" class="java.lang.String" itemvalue="Grails.test with actual part b()" />
+        <item index="2" class="java.lang.String" itemvalue="Grails.DayTwentyTwoServiceSpecification" />
+        <item index="3" class="java.lang.String" itemvalue="Grails.test with actual part b() (1)" />
+        <item index="4" class="java.lang.String" itemvalue="Grails.test with actual part a()" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -631,12 +629,20 @@
       <workItem from="1450828830811" duration="14669000" />
       <workItem from="1450910287027" duration="2312000" />
       <workItem from="1452189449726" duration="2633000" />
-      <workItem from="1452282317321" duration="34354000" />
+      <workItem from="1452282317321" duration="37489000" />
+      <workItem from="1452701283384" duration="8550000" />
+      <workItem from="1452801809776" duration="1304000" />
+      <workItem from="1453235673583" duration="4576000" />
+      <workItem from="1453297999040" duration="33740000" />
+      <workItem from="1453392731514" duration="3127000" />
+      <workItem from="1453467332070" duration="23275000" />
+      <workItem from="1453754149570" duration="3611000" />
+      <workItem from="1453915917010" duration="14258000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="303294000" />
+    <option name="totallyTimeSpent" value="398870000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -659,41 +665,41 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1080" y="24" width="1920" height="1056" extended-state="6" />
+    <frame x="1080" y="-4" width="1920" height="1084" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38370848" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Grails View" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290461" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13820705" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3869239" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290461" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3687031" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Grails View" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290461" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15101388" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2647374" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290461" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290461" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -752,246 +758,47 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/test/unit/DayOneServiceSpecification.groovy</url>
-          <line>54</line>
-          <properties />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/test/unit/DayFiveServiceSpecification.groovy</url>
-          <line>155</line>
-          <properties />
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/test/unit/DayOneServiceSpecification.groovy</url>
-          <line>45</line>
-          <properties />
-          <option name="timeStamp" value="32" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/test/unit/DayTwoServiceSpecification.groovy</url>
-          <line>43</line>
-          <properties />
-          <option name="timeStamp" value="33" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/test/unit/DayTwoServiceSpecification.groovy</url>
-          <line>52</line>
-          <properties />
-          <option name="timeStamp" value="34" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/test/unit/DayFourServiceSpecification.groovy</url>
-          <line>14</line>
-          <properties />
-          <option name="timeStamp" value="35" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/grails-app/controllers/IncomingController.groovy</url>
-          <line>6</line>
-          <properties />
-          <option name="timeStamp" value="36" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/grails-app/services/DayEightService.groovy</url>
-          <line>335</line>
-          <properties />
-          <option name="timeStamp" value="42" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/test/unit/DayTenServiceSpecification.groovy</url>
+          <url>file://$PROJECT_DIR$/test/unit/DayTwentyTwoServiceSpecification.groovy</url>
           <line>16</line>
           <properties />
-          <option name="timeStamp" value="51" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/grails-app/services/DayElevenService.groovy</url>
-          <line>67</line>
-          <properties />
-          <option name="timeStamp" value="52" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/grails-app/services/DayNineService.groovy</url>
-          <line>17</line>
-          <properties />
-          <option name="timeStamp" value="120" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/test/unit/DayNineServiceSpecification.groovy</url>
-          <line>24</line>
-          <properties />
-          <option name="timeStamp" value="123" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/grails-app/services/DayNineService.groovy</url>
-          <line>76</line>
-          <properties />
-          <option name="timeStamp" value="138" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/test/unit/DayThirteenServiceSpecification.groovy</url>
-          <line>91</line>
-          <properties />
-          <option name="timeStamp" value="143" />
+          <option name="timeStamp" value="421" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/grails-app/services/DayFifteenService.groovy</url>
-          <line>92</line>
+          <line>89</line>
           <properties />
-          <option name="timeStamp" value="160" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/test/unit/DayFifteeenServiceSpecification.groovy</url>
-          <line>34</line>
-          <properties />
-          <option name="timeStamp" value="164" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/grails-app/services/DayFifteenService.groovy</url>
-          <line>124</line>
-          <properties />
-          <option name="timeStamp" value="168" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/grails-app/services/DayFifteenService.groovy</url>
-          <line>123</line>
-          <properties />
-          <option name="timeStamp" value="169" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/grails-app/services/DayFifteenService.groovy</url>
-          <line>125</line>
-          <properties />
-          <option name="timeStamp" value="170" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/test/unit/DayFifteeenServiceSpecification.groovy</url>
-          <line>47</line>
-          <properties />
-          <option name="timeStamp" value="174" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/grails-app/services/DayFifteenService.groovy</url>
-          <line>151</line>
-          <properties />
-          <option name="timeStamp" value="175" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/grails-app/services/DaySixteenService.groovy</url>
-          <line>563</line>
-          <properties />
-          <option name="timeStamp" value="183" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/grails-app/services/DaySixteenService.groovy</url>
-          <line>559</line>
-          <properties />
-          <option name="timeStamp" value="184" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/test/unit/DaySevenServiceSpecification.groovy</url>
-          <line>45</line>
-          <properties />
-          <option name="timeStamp" value="196" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/grails-app/services/DaySeventeenService.groovy</url>
-          <line>34</line>
-          <properties />
-          <option name="timeStamp" value="219" />
+          <option name="timeStamp" value="433" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/grails-app/services/DayTwentyTwoService.groovy</url>
-          <line>135</line>
+          <line>163</line>
           <properties />
-          <option name="timeStamp" value="285" />
+          <option name="timeStamp" value="469" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/test/unit/DayNineteenServiceSpecification.groovy</url>
+          <line>52</line>
+          <properties />
+          <option name="timeStamp" value="479" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/grails-app/services/DayNineteenService.groovy</url>
           <line>124</line>
           <properties />
-          <option name="timeStamp" value="315" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/grails-app/services/DayNineteenService.groovy</url>
-          <line>123</line>
-          <properties />
-          <option name="timeStamp" value="316" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/grails-app/services/DayNineteenService.groovy</url>
-          <line>144</line>
-          <properties />
-          <option name="timeStamp" value="317" />
+          <option name="timeStamp" value="481" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="320" />
+      <option name="time" value="482" />
     </breakpoint-manager>
   </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="jar:///usr/lib/jvm/java-7-openjdk-amd64/jre/lib/rt.jar!/java/lang/String.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334" vertical-offset="2538" max-vertical-offset="4199">
-          <caret line="143" column="28" selection-start-line="143" selection-start-column="28" selection-end-line="143" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/java-7-openjdk-amd64/jre/lib/rt.jar!/java/util/List.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="704" max-vertical-offset="1159">
-          <caret line="45" column="6" selection-start-line="45" selection-start-column="6" selection-end-line="45" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/services/DayOneService.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.1443769" vertical-offset="0" max-vertical-offset="893">
-          <caret line="7" column="36" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/services/DayTwoService.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0900474" vertical-offset="0" max-vertical-offset="20577">
-          <caret line="5" column="35" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.296875" vertical-offset="0" max-vertical-offset="448">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/unit/DayTwelveServiceSpecification.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1406">
-          <caret line="64" column="23" selection-start-line="64" selection-start-column="23" selection-end-line="64" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/unit/DayFourServiceSpecification.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="89" max-vertical-offset="627">
-          <caret line="24" column="25" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/unit/DayFiveServiceSpecification.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2489" max-vertical-offset="3173">
-          <caret line="147" column="21" selection-start-line="147" selection-start-column="21" selection-end-line="147" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/unit/DayEightServiceSpecification.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="867" max-vertical-offset="1672">
@@ -1003,7 +810,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="604" max-vertical-offset="1197">
           <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1011,14 +817,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="712" max-vertical-offset="1615">
           <caret line="58" column="25" selection-start-line="58" selection-start-column="25" selection-end-line="58" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gvm/grails/2.3.5/lib/org.codehaus.groovy/groovy-all/jars/groovy-all-2.1.9-sources.jar!/org/codehaus/groovy/runtime/DefaultGroovyMethods.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="209555" max-vertical-offset="251389">
-          <caret line="11639" column="22" selection-start-line="11639" selection-start-column="22" selection-end-line="11639" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -1033,7 +831,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1976">
           <caret line="93" column="0" selection-start-line="93" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1048,15 +845,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="569" max-vertical-offset="1159">
           <caret line="48" column="8" selection-start-line="48" selection-start-column="8" selection-end-line="48" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/unit/DayFifteeenServiceSpecification.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1406">
-          <caret line="40" column="19" selection-start-line="40" selection-start-column="19" selection-end-line="40" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1067,35 +855,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/services/DayFourteenService.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1259" max-vertical-offset="1862">
-          <caret line="79" column="18" selection-start-line="79" selection-start-column="18" selection-end-line="79" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/services/DaySevenService.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="8835">
-          <caret line="1" column="14" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/unit/DaySevenServiceSpecification.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1216">
           <caret line="7" column="11" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/services/DayNineService.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1060" max-vertical-offset="2223">
-          <caret line="66" column="15" selection-start-line="66" selection-start-column="15" selection-end-line="66" selection-end-column="15" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1131,29 +894,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/services/DayFourService.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1159">
-          <caret line="9" column="36" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/services/DayFiveService.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="19231" max-vertical-offset="21850">
-          <caret line="1009" column="36" selection-start-line="1009" selection-start-column="36" selection-end-line="1009" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/services/DaySixService.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="8915" max-vertical-offset="9500">
-          <caret line="496" column="1" selection-start-line="412" selection-start-column="0" selection-end-line="496" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/unit/DayEighteenServiceSpecification.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1463">
@@ -1172,7 +912,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="228" max-vertical-offset="1862">
           <caret line="13" column="36" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="36" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1195,31 +934,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.76854926" vertical-offset="123" max-vertical-offset="1045">
           <caret line="44" column="19" selection-start-line="44" selection-start-column="19" selection-end-line="44" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/services/DayTwentyOneService.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1642" max-vertical-offset="2584">
-          <caret line="101" column="32" selection-start-line="101" selection-start-column="12" selection-end-line="101" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/unit/DayTwentyTwoServiceSpecification.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9391144" vertical-offset="118" max-vertical-offset="1064">
-          <caret line="34" column="58" selection-start-line="34" selection-start-column="58" selection-end-line="34" selection-end-column="58" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/services/DayTwentyTwoService.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2699" max-vertical-offset="4066">
-          <caret line="135" column="22" selection-start-line="135" selection-start-column="22" selection-end-line="135" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1227,7 +941,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.31568998" vertical-offset="3766" max-vertical-offset="5662">
           <caret line="209" column="8" selection-start-line="209" selection-start-column="8" selection-end-line="210" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1235,15 +948,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="2.6952715" vertical-offset="0" max-vertical-offset="2489">
           <caret line="82" column="13" selection-start-line="82" selection-start-column="13" selection-end-line="82" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/services/DayEightService.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.28174603" vertical-offset="6393" max-vertical-offset="7296">
-          <caret line="329" column="26" selection-start-line="329" selection-start-column="26" selection-end-line="329" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1251,17 +955,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.1402214" vertical-offset="0" max-vertical-offset="1311">
           <caret line="4" column="34" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/services/DayElevenService.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35160682" vertical-offset="327" max-vertical-offset="1653">
-          <caret line="28" column="8" selection-start-line="28" selection-start-column="8" selection-end-line="34" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1269,7 +962,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.22823985" vertical-offset="186" max-vertical-offset="703">
           <caret line="17" column="28" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1289,45 +981,211 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/unit/DayNineteenServiceSpecification.groovy">
+    <entry file="file://$PROJECT_DIR$/grails-app/services/DayEightService.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="950" max-vertical-offset="1501">
-          <caret line="64" column="25" selection-start-line="64" selection-start-column="25" selection-end-line="64" selection-end-column="25" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="6837" max-vertical-offset="7296">
+          <caret line="329" column="26" selection-start-line="329" selection-start-column="26" selection-end-line="329" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/services/DayFifteenService.groovy">
+    <entry file="file://$PROJECT_DIR$/grails-app/services/DayElevenService.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2109" max-vertical-offset="3002">
-          <caret line="42" column="20" selection-start-line="42" selection-start-column="20" selection-end-line="42" selection-end-column="20" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="1125" max-vertical-offset="1653">
+          <caret line="27" column="30" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/services/DayNineteenService.groovy">
+    <entry file="file://$PROJECT_DIR$/grails-app/services/DayFiveService.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2223" max-vertical-offset="3135">
-          <caret line="120" column="5" selection-start-line="120" selection-start-column="5" selection-end-line="120" selection-end-column="5" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="19231" max-vertical-offset="21850">
+          <caret line="1009" column="36" selection-start-line="1009" selection-start-column="36" selection-end-line="1009" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/services/DayFourService.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1159">
+          <caret line="9" column="36" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/services/DayFourteenService.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1259" max-vertical-offset="1862">
+          <caret line="79" column="18" selection-start-line="79" selection-start-column="18" selection-end-line="79" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/services/DayNineService.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1060" max-vertical-offset="2223">
+          <caret line="66" column="15" selection-start-line="66" selection-start-column="15" selection-end-line="66" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/services/DayOneService.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="28" max-vertical-offset="893">
+          <caret line="7" column="36" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gvm/grails/2.3.5/lib/org.codehaus.groovy/groovy-all/jars/groovy-all-2.1.9-sources.jar!/org/codehaus/groovy/runtime/DefaultGroovyMethods.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33208254" vertical-offset="75120" max-vertical-offset="251389">
+          <caret line="4122" column="25" selection-start-line="4122" selection-start-column="25" selection-end-line="4122" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/unit/DaySeventeenServiceSpecification.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1216">
-          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+        <state vertical-scroll-proportion="0.62173915" vertical-offset="455" max-vertical-offset="1216">
+          <caret line="40" column="76" selection-start-line="40" selection-start-column="76" selection-end-line="40" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/services/DaySevenService.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="969" max-vertical-offset="8835">
+          <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/unit/DayTwentyFourServiceSpecification.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1254">
+          <caret line="57" column="26" selection-start-line="57" selection-start-column="26" selection-end-line="57" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/services/DayTwentyFourService.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.1161138" vertical-offset="2067" max-vertical-offset="2489">
+          <caret line="84" column="0" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/services/DaySeventeenService.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.4723247" vertical-offset="0" max-vertical-offset="1501">
-          <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+        <state vertical-scroll-proportion="-0.6195652" vertical-offset="342" max-vertical-offset="1463">
+          <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-7-openjdk-amd64/jre/lib/rt.jar!/java/util/Map.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3326087" vertical-offset="189" max-vertical-offset="969">
+          <caret line="19" column="6" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/services/DaySixService.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="7490" max-vertical-offset="9500">
+          <caret line="406" column="15" selection-start-line="406" selection-start-column="15" selection-end-line="406" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/services/DayTwoService.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.83668905" vertical-offset="19994" max-vertical-offset="20577">
+          <caret line="1074" column="15" selection-start-line="1074" selection-start-column="15" selection-end-line="1074" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/unit/DayFifteeenServiceSpecification.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2" max-vertical-offset="874">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/services/DayFifteenService.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="3.1608775" vertical-offset="0" max-vertical-offset="2090">
+          <caret line="91" column="0" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-7-openjdk-amd64/jre/lib/rt.jar!/java/lang/String.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33333334" vertical-offset="2280" max-vertical-offset="4199">
+          <caret line="131" column="58" selection-start-line="131" selection-start-column="58" selection-end-line="131" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-7-openjdk-amd64/jre/lib/rt.jar!/java/util/PriorityQueue.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="50" max-vertical-offset="1995">
+          <caret line="19" column="11" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-7-openjdk-amd64/jre/lib/rt.jar!/java/util/concurrent/atomic/AtomicInteger.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.15939598" vertical-offset="0" max-vertical-offset="1026">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/unit/DayTwentyTwoServiceSpecification.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="665">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/services/DayTwentyTwoService.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.188321" vertical-offset="2964" max-vertical-offset="4636">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/services/DayTwentyOneService.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.18978103" vertical-offset="1409" max-vertical-offset="2584">
+          <caret line="83" column="4" selection-start-line="97" selection-start-column="4" selection-end-line="101" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/unit/DayNineteenServiceSpecification.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="522" max-vertical-offset="1178">
+          <caret line="49" column="32" selection-start-line="49" selection-start-column="32" selection-end-line="49" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/services/DayNineteenService.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="3.7231727" vertical-offset="0" max-vertical-offset="3363">
+          <caret line="127" column="12" selection-start-line="127" selection-start-column="12" selection-end-line="127" selection-end-column="12" />
+          <folding />
         </state>
       </provider>
     </entry>

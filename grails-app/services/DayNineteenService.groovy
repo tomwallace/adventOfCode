@@ -8,7 +8,6 @@ class DayNineteenService {
 
     final static String PUZZLE_INPUT = "ORnPBPMgArCaCaCaSiThCaCaSiThCaCaPBSiRnFArRnFArCaCaSiThCaCaSiThCaCaCaCaCaCaSiRnFYFArSiRnMgArCaSiRnPTiTiBFYPBFArSiRnCaSiRnTiRnFArSiAlArPTiBPTiRnCaSiAlArCaPTiTiBPMgYFArPTiRnFArSiRnCaCaFArRnCaFArCaSiRnSiRnMgArFYCaSiRnMgArCaCaSiThPRnFArPBCaSiRnMgArCaCaSiThCaSiRnTiMgArFArSiThSiThCaCaSiRnMgArCaCaSiRnFArTiBPTiRnCaSiAlArCaPTiRnFArPBPBCaCaSiThCaPBSiThPRnFArSiThCaSiThCaSiThCaPTiBSiRnFYFArCaCaPRnFArPBCaCaPBSiRnTiRnFArCaPRnFArSiRnCaCaCaSiThCaRnCaFArYCaSiRnFArBCaCaCaSiThFArPBFArCaSiRnFArRnCaCaCaFArSiRnFArTiRnPMgArF"
 
-    List<Integer> STEPS_MAKE_MOLECULE
 
     final static String PUZZLE_RULES = """Al => ThF
 Al => ThRnFAr
@@ -52,7 +51,8 @@ Ti => BP
 Ti => TiTi
 e => HF
 e => NAl
-e => OMg"""
+e => OMg
+"""
 
     // http://adventofcode.com/day/19
 
@@ -109,44 +109,56 @@ Your puzzle input describes all of the possible replacements and, at the bottom,
         return molecules.unique().size()
     }
 
-    Integer countMinFabricateMolecule(String desiredMolecule, String rulesString) {
-        STEPS_MAKE_MOLECULE = []
+    // Was completely stumped on this part.  I kept getting the response for  - NRnBSiRnCaRnFArYFArFArF
+    // which went no further.
+    // Got help from balda132's response on https://www.reddit.com/r/adventofcode/comments/3xflz8/day_19_solutions/
+    Integer solvePartTwo(String originalMolecule, String rulesString) {
         List<List> rules = getReplacementRules(rulesString)
-
-        String start = 'e'
-
-        makeMoleculeRecursive(desiredMolecule, start, rules, 0)
-
-        return STEPS_MAKE_MOLECULE.sort()[0]
+        Map reverseReplacements = [:]
+        rules.each { rule ->
+            reverseReplacements["${rule[1]}"] = rule[0]
+        }
+        int result = 0;
+        while ((result = findMolecule(0, originalMolecule, reverseReplacements)) == -1)
+        ;
+        System.out.println("Part Two: " + result);
+        return result
     }
 
-    protected Integer makeMoleculeRecursive(String desiredMolecule, String current, List<List> rules, Integer counter) {
-        if (current.size() > desiredMolecule.size()) {
-            return 0
-        }
-        if (current == desiredMolecule) {
-            println("Found one >> ${current}")
-            STEPS_MAKE_MOLECULE << counter
-            return 1
-        }
-        rules.each { d ->
-            List<Integer> indexsOfMatch = []
-            int index = current.indexOf(d[0]);
-            while (index >= 0) {
-                indexsOfMatch << index
-                index = current.indexOf(d[0], index + 1)
+    private int findMolecule(int depth,
+                                    String molecule,
+                                    Map reverseReplacements) {
+        if (molecule.equals("e")) {
+            return depth;
+        } else {
+            List<String> keys = new ArrayList<>(reverseReplacements.keySet());
+            boolean replaced = false;
+            while (!replaced) {
+                String toReplace = keys.remove(new Random().nextInt(keys.size()));
+                Matcher matcher = Pattern.compile(toReplace).matcher(molecule);
+                if (matcher.find()) {
+                    molecule = replaceTwo(molecule, reverseReplacements.get(toReplace), matcher);
+                    replaced = true;
+                }
+                if (keys.isEmpty()) {
+                    return -1;
+                }
             }
-            String molecule = current
-            indexsOfMatch.each { idx ->
-                String newChar = d[1]
-                String firstPart = current.substring(0, idx)
-                String lastPart = current.substring(idx + d[0].size(), current.length())
-                molecule = "${firstPart}${newChar}${lastPart}"
-                ++counter
-            }
-            makeMoleculeRecursive(desiredMolecule, molecule, rules, counter)
+            return findMolecule(depth + 1, molecule, reverseReplacements);
         }
     }
+
+    private String replaceTwo(String original, String replacement, Matcher matcher) {
+        int begin = matcher.start(0);
+        int end = matcher.end(0);
+        StringBuilder newMolecule = new StringBuilder();
+        newMolecule.append(original.substring(0, begin));
+        newMolecule.append(replacement);
+        newMolecule.append(original.substring(end));
+        return newMolecule.toString();
+    }
+
+
 
     protected List<List> getReplacementRules (String input) {
         List<List> result = []
@@ -154,7 +166,7 @@ Your puzzle input describes all of the possible replacements and, at the bottom,
             List<String> lineResults = line.findAll(/(\w+)/)
             result << lineResults
         }
-        return result
+        return result.sort { -it[1].size() }
     }
 
 }

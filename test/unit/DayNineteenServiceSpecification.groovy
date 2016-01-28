@@ -36,20 +36,6 @@ class DayNineteenServiceSpecification extends Specification {
         resultTwo == 7
     }
 
-    def "test countMinFabricateMolecule"() {
-        when:
-        def rules = "e => H\ne =>O\nH => HO\nH => OH\nO => HH\n"
-        def desiredMoleculeOne = "HOH"
-        def resultOne = service.countMinFabricateMolecule(desiredMoleculeOne, rules)
-
-        def desiredMoleculeTwo = "HOHOHO"
-        def resultTwo = service.countMinFabricateMolecule(desiredMoleculeTwo, rules)
-
-        then:
-        resultOne == 3
-        resultTwo == 6
-    }
-
     def "test with actual part a"() {
         when:
         def result = service.countDistinctMolecules(service.PUZZLE_INPUT, service.PUZZLE_RULES)
@@ -59,16 +45,13 @@ class DayNineteenServiceSpecification extends Specification {
         result == 576
     }
 
-    // TODO: Maybe try overnight.  Needed to increase the thread count as getting a stack overflow -       -Xss512M
-    // TODO: Indicating recusion problem might not work for this case
-
     def "test with actual part b"() {
         when:
-        def result = service.countMinFabricateMolecule(service.PUZZLE_INPUT, service.PUZZLE_RULES)
+        def result = service.solvePartTwo(service.PUZZLE_INPUT, service.PUZZLE_RULES)
 
         then:
         result
-        result == 2117
+        result == 207
     }
 
 }
