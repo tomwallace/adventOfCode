@@ -1,19 +1,8 @@
+
 /**
  * Created by tomwallace on 12/7/15.
  */
 class DayTwentyTwoService {
-
-    final static Entity BOSS = new Entity(hitPoints: 71, damage: 10, armor: 0)
-
-    final static List<Map> SPELLS = [
-            [name: 'magicMissile', cost: 53, damage: 4, armor: 0, hitPoints: 0, mana: 0],
-            [name: 'drain', cost: 73, damage: 2, armor: 0, hitPoints: 2, mana: 0],
-            [name: 'shield', cost: 113, damage: 0, armor: 7, hitPoints: 0, mana: 0, duration: 6],
-            [name: 'poison', cost: 173, damage: 3, armor: 0, hitPoints: 0, mana: 0, duration: 6],
-            [name: 'recharge', cost: 229, damage: 0, armor: 0, hitPoints: 0, mana: 101, duration: 5]
-    ]
-
-    List<Integer> MANA_SPENT = []
 
     // http://adventofcode.com/day/22
 
@@ -125,86 +114,125 @@ Poison deals 3 damage. This kills the boss, and the player wins.
 You start with 50 hit points and 500 mana points. The boss's actual stats are in your puzzle input. What is the least amount of mana you can spend and still win the fight? (Do not include mana recharge effects as "spending" negative mana.)
 
      */
-    Integer leastManaSpentToWin(Entity me, Entity boss) {
-        List<Integer> costsToSuccessfullyKillBoss = []
 
-        SPELLS.each { Map spell ->
-            Map effects = [:]
-            fightRound(me, boss, effects, spell)
+    Integer leastManaSpentToWin(Integer bossHitPoints, Boolean hard) {
+        PriorityQueue<Wizard> wizards = new PriorityQueue<Wizard>(1, new Comparator<Wizard>() {
+            public int compare(Wizard a, Wizard b) {
+                a.manaSpentDuringFight <=> b.manaSpentDuringFight
+            }
+        })
+        Integer minMana = Integer.MAX_VALUE
+        wizards.add(new Wizard(50, 500, bossHitPoints))
+        while (wizards.size() > 0) {
+            Wizard current = wizards.poll()
+
+            if (hard) {
+                --current.hitPoints
+            }
+
+            // Apply effects before Wizard turn
+            current.applyEffects()
+
+            for (int spell = 0; spell < Wizard.spells.size(); spell++) {
+                if (current.canCast(spell)) {
+                    Wizard next = current.clone()
+
+                    // Cast the spell
+                    next.castSpell(spell)
+
+                    // apply effects at start of boss's turn
+                    next.applyEffects()
+
+                    if (next.bossHp <= 0) {
+                        // We win
+                        minMana = next.manaSpentDuringFight < minMana ? next.manaSpentDuringFight : minMana
+                        // Trim any wizards off list that have spent more than that amount of mana already
+                        wizards.removeAll { w -> w.manaSpentDuringFight > minMana }
+                    } else {
+                        // Wizard takes damage
+                        next.hitPoints -= ((10 - next?.armor) > 1 ? (10 - next?.armor) : 1)
+                        // If still alive, keep them on the stack
+                        if (next.hitPoints > 0 && next.mana > 0 && next.manaSpentDuringFight < minMana) {
+                            wizards.add(next)
+                        }
+                    }
+                }
+            }
+
         }
 
-        return MANA_SPENT.sort()[0]
+        return minMana
+    }
+}
+
+class Wizard implements Cloneable {
+
+    final static List<Map> spells = [
+            [name: 'magicMissile', cost: 53, damage: 4, armor: 0, hitPoints: 0, mana: 0, duration: 0],
+            [name: 'drain', cost: 73, damage: 2, armor: 0, hitPoints: 2, mana: 0, duration: 0],
+            [name: 'shield', cost: 113, damage: 0, armor: 7, hitPoints: 0, mana: 0, duration: 6],
+            [name: 'poison', cost: 173, damage: 3, armor: 0, hitPoints: 0, mana: 0, duration: 6],
+            [name: 'recharge', cost: 229, damage: 0, armor: 0, hitPoints: 0, mana: 101, duration: 5]
+    ]
+
+    Integer hitPoints
+    Integer armor
+    Integer mana
+    Integer manaSpentDuringFight = 0
+
+    Integer bossHp   // Hit Points and Damage
+
+    Map effects = [:]
+
+    Wizard(Integer hp, Integer m, Integer b) {
+        hitPoints = hp
+        mana = m
+        bossHp = b
     }
 
-    protected void fightRound(Entity me, Entity boss, Map effects, Map spellToBeCast) {
-        if (me.hitPoints <= 0 || me.mana <= 0) {
-            println("I was killed and the boss won.")
-            // reset values
-            // TODO: Figure out a better way to store this information
-            boss.hitPoints = 71
-            me.hitPoints = 50
-            me.mana = 500
-            me.manaSpentDuringFight = 0
-            return
-        }
+    boolean canCast(Integer i) {
+        return mana >= spells[i].cost && (!effects.keySet().contains(spells[i].name))
+    }
 
-        if (boss.hitPoints <= 0) {
-            println("I WON. Mana remaining is: ${me.mana}")
-            // reset values
-            boss.hitPoints = 71
-            me.hitPoints = 50
-            me.mana = 500
-            MANA_SPENT << me.manaSpentDuringFight
-            return
-        }
+    void castSpell(Integer i) {
+        mana -= spells[i].cost
+        manaSpentDuringFight += spells[i].cost
 
-        // Fight my round
-        applyEffects(me, boss, effects)
-
-        // Cast the spell
-       // Cannot cast a spell with an effect in play
-        if (effects.containsKey(spellToBeCast.name)) {
-            return
-        }
-        // Add  spells with effects to effects
-        if (spellToBeCast.duration) {
-            effects["${spellToBeCast.name}"] = 0
+        if (spells[i].duration != 0) {
+            effects["${spells[i].name}"] = 0
         } else {
-            boss.hitPoints -= spellToBeCast.damage
-            me.hitPoints += spellToBeCast.hitPoints
-            me.mana -= spellToBeCast.cost
-            me.manaSpentDuringFight += spellToBeCast.cost
+            bossHp -= spells[i].damage
+            hitPoints += spells[i].hitPoints
         }
 
-        // Boss turn
-        applyEffects(me, boss, effects)
-        me.hitPoints -= ((boss.damage - me.armor) > 1 ? (boss.damage - me.armor) : 1)
-
-        // Pick next spell to cast
-        List<Map> updatedSpells = SPELLS.clone()
-        updatedSpells.remove(updatedSpells.findIndexOf { it.cost == spellToBeCast.cost})
-        updatedSpells.each { spell ->
-            fightRound(me, boss, effects, spell)
-        }
     }
-
-    protected void applyEffects(Entity me, Entity boss, Map effects) {
-        // Calculate effects
-        def i = 0
+    void applyEffects() {
+        List<String> keysToRemove = []
+        armor = 0
         effects.each { effect ->
-            Map matchingSpell = SPELLS.find { it.name == effect.key}
-            boss.hitPoints -= matchingSpell.damage
-            me.armor = matchingSpell.armor
-            me.mana += matchingSpell.mana
+            Map matchingSpell = spells.find { it.name == effect.key}
+            bossHp -= matchingSpell.damage
+            if (matchingSpell.name == 'shield') {
+                armor = 7
+            }
+            mana += matchingSpell.mana
 
             // Increase duration and remove if exceeds
             ++effect.value
             if (effect.value >= matchingSpell.duration) {
-                effects.remove(i)
+                keysToRemove << effect.key
             }
-            ++i
+        }
+        keysToRemove.each {
+            effects.remove(it)
         }
     }
 
+    Wizard clone() {
+        Wizard wizard = new Wizard(hitPoints, mana, bossHp)
+        wizard.armor = armor
+        wizard.manaSpentDuringFight = manaSpentDuringFight
+        wizard.effects = effects.clone()
+        return wizard
+    }
 }
-
